@@ -1,0 +1,40 @@
+html{
+	text-align: center;
+	font-size:55px;
+	  background: url(img/136.png);
+  background-repeat: repeat; 
+}
+.btn{
+position: relative;
+    padding: 5px 38px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 8px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: 'Century Gothic', SomeFont, sans-serif;
+    border-width: 2px;
+    transition: .3s;
+    backface-visibility: hidden;
+	background-color: #337ab7;
+}
+.raschet{
+	width:400px;
+	height:60px;
+		font-size:55px;
+}
+.raschet2{
+	width:400px;
+	height:60px;
+		font-size:55px;
+}
+.vesi{
+	float:left;
+position:relative;
+}
+.zhizha{
+	float:right;
+	width:450px;
+	height:450px;
+	position:relative;
+	}

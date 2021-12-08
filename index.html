@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class="text">
+   <div class="col">
+  <div class="form">
+ <label class="litri">Введите литры</label>
+ <div class="stepper">
+  <br>
+ <input class="raschet" id="tonn" type="number" name="tonn" min="1"oninput="validity.valid||(value='');">
+ </div>
+ <div class="form">
+<label class="litri">Выберите материал/жидкость</label>
+<br>
+<br>
+<select class="raschet2" id="v" name="v" tabindex="-1" aria-hidden="true">
+<option value="1031">Кефир 2,5%</option>
+<option value="800">Керосин</option>
+<option value="1027">Молоко</option>
+<option value="750">Бензин</option>
+<option value="1000">Вода</option>
+<option value="1350">Краска</option>
+<option value="800">Нефть</option>
+<option value="900">Масло</option>
+<option value="790">Ацетон</option>
+<option value="1271">Антифриз</option>
+<option value="1300">Грунтовка</option>
+<option value="820">Масло моторное</option>
+<option value="13600">Ртуть</option>
+<option value="789">Спирт</option>
+</select><span class="raznoe" dir="ltr" style="width: 441px;">
+<span class="selection">
+<span class="123456" id="select2-v-container" title="КЕФИР 2.5%"></span>
+</div>
+<br>
+<img class="vesi" src="img/vesi.gif">
+<img class="zhizha" src="img/zhizha.gif">
+<button class="btn" onclick="rashet()">Рассчитать</button>
+<p style="font-size: 55px;" class="section-20" id="result"></p>
+</div>
+<script>
+    function rashet() {
+        var value = document.getElementById("tonn").value;
+        var v = document.getElementById("v").value;
+        var name = document.querySelector('#v option:checked').text;
+        var result = value * v / 1000;
+        document.getElementById('result').innerHTML = value + ' л (' + name + ') = <b>' + result + '</b> кг';
+    }
+</script>
+</html>
